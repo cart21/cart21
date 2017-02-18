@@ -1,0 +1,23 @@
+
+.blog-body{
+	padding: 0;
+    margin: 0;
+}
+
+.blog-title{
+	color: #040404;
+}
+
+.blog-content{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+@media screen and (max-width : 768px){
+	
+
+	
+}

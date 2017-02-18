@@ -1,0 +1,297 @@
+#header_container{
+	background-color: rgba(255, 255, 255, 0.61);
+	/*border-bottom: 4px solid #A93009;*/
+}
+
+.h_line_center{	
+    height: 120px;
+    padding: 0px 6px;
+}
+
+#header_page_left {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+#header_page_center {
+    height: 100%;
+    margin: 0;
+}
+
+#header_page_center_top_full{
+	padding: 0;
+}
+#header_page_center_bottom_full{
+	padding: 0;
+}
+
+#top_top{
+	padding:0px;
+	position: relative;
+    min-height: 40px;
+    background-color: rgba(255, 255, 255, 0.88);
+	
+}
+#top_center{
+	padding:0px;
+	position: relative;
+       min-height: 120px;
+    background-color: white;s
+	
+}
+
+.logo_container{
+    /*position: absolute;*/
+    bottom: 0;
+}
+.cart21logo{
+ 
+}
+
+#logo_position{
+	padding:0px;
+    position: absolute;
+    bottom: 0;
+}
+#logo_right_position{
+	padding:0px;
+	position: relative;
+    min-height: 120px;
+    float: right;
+}
+
+#menu_position{
+     position: absolute;
+    bottom: 0;
+        padding: 0;
+}
+    
+#menu_full_position{
+    padding: 0px !important;
+}
+#top_links{
+	list-style: none;
+	float: none;
+	display: inline-block;
+	padding: 7px;
+}
+#top_links a {
+    color: #151515;
+}
+#top_links>li {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+#cart_position{
+	padding-top: 10px;
+    padding-bottom: 10px;
+    float: right;
+}
+
+
+#top_search{
+    padding: 2px;
+    text-align: right;
+    float: right;
+    z-index: 9;
+    width: 75%;
+}
+
+#top_search form {
+ 	display: table;
+ 	height: 35px;
+ 	width: 99%;
+ 	text-align: -webkit-center;
+}
+
+#top_search input {
+    padding-left: 14px;
+    margin-right: 4px;
+    display: table-cell;
+    height: inherit;
+    width: 80%;
+}
+
+#top_search #search_select{
+    width: 114px;
+    padding: 0px 5px 0px 2px;
+    background-color: #fff;
+    margin-right: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    display: table-cell;
+    height: inherit;
+    color: #A2A1A1;
+}
+
+#top_search button {
+  background: #dc5c05;
+  color: white;
+  display: table-cell;
+  height: 36px;
+  width: 40px;
+} 
+
+
+#search_content{
+    padding: 2px;
+    text-align: right;
+    float: right;
+    z-index: 9;
+    width: 99%;
+}
+
+#search_content form {
+ 	display: table;
+ 	height: 35px;
+ 	width: 99%;
+ 	text-align: -webkit-center;
+}
+
+#search_content input {
+    padding-left: 14px;
+    margin-right: 4px;
+    display: table-cell;
+    height: inherit;
+    width: 80%;
+}
+
+#search_content #search_select{
+    width: 114px;
+    padding: 0px 5px 0px 2px;
+    background-color: #fff;
+    margin-right: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    display: table-cell;
+    height: inherit;
+    color: #A2A1A1;
+}
+
+#search_content button {
+  background: #dc5c05;
+  color: white;
+  display: table-cell;
+  height: 36px;
+  width: 40px;
+} 
+
+#language_link{
+    list-style: none;
+    padding: 0px 4px;
+    display: inline-block;
+}
+
+#language_link>li {
+    display: inline-block;
+}
+.social_link {
+    display: inline-block;
+    padding: 10px 3px 1px 1px;
+   
+}
+.social_link .social_img {
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+
+#contanct_info{
+    display: inline;
+        padding: 7px 0px 0px 10px;
+}
+#contanct_info>ul {
+    list-style: none;
+        float: left;
+            padding: 0;
+}
+
+#contanct_info>ul>li {
+    display: inline-block;
+    margin: 0px 19px 0px 0px;
+}
+
+/*  top cart css*/
+
+
+#top_cart{	    
+    position: absolute;
+    display: none;
+    background-color: white;
+    z-index: 2004;
+    padding: 10px;
+    margin-top: 0px;
+    box-shadow: -2px 5px 8px -3px rgba(0, 0, 0, 0.73);
+    width: 321px;
+    right: 0;
+}
+
+#top_cart hr {
+    margin: 5px;
+}
+
+#top_cart ul{
+	list-style:none;
+	padding: 0px;
+}
+
+#top_cart li{ display:block;	}
+
+.top_cart_header{
+    text-align: -webkit-right;
+    font-size: larger;
+    font-family: 'Oswald', sans-serif;
+}
+
+.top_cart_header:hover + #top_cart, #top_cart:hover {
+	display: block;
+}
+
+/*  top cart css*/
+
+
+
+
+@media screen and (max-width : 768px){
+	
+.cart21logo {
+
+}
+#header_container {
+    margin: 2px;
+}
+
+#menu_position{    
+	width: 99%;
+	 position: initial;
+	 
+	 }
+
+#top_cart{
+	right: 30px;
+}
+	
+#top_search{
+    width: 95%;
+}
+
+#logo_position{
+    position: initial;
+}
+.h_line_center {
+
+}
+
+#top_search form {
+	width: 99%;
+}
+#top_search input {
+    width: 80%;
+}
+	
+#top_search #search_select {
+    width: 25%;
+}
+
+}

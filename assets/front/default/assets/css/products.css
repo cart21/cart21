@@ -1,0 +1,151 @@
+
+.product_title{
+    font-family: 'Patua One', cursive;
+	color: #000000;
+}
+
+.product_title_side{
+    font-family: 'Patua One', cursive;
+	color: #000000;
+	font-size:14px;
+}
+
+.product_price{
+	font-family: 'Oswald', sans-serif;
+	
+}
+
+.p_price{
+  text-align: center;
+  color:#636060;
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.c_product:hover .bg-button {
+    display: block;
+}
+
+
+.c_product{
+	 min-height: 314px;
+	 margin: 0px 2px 0px 2px;
+/*	border: 1px solid rgba(229, 229, 229, 0.46);*/
+    border-radius: 5px;
+    padding: 12px;
+	
+}
+.c_product:hover{
+	background: #f2f2f2;
+	-webkit-box-shadow: 3px 1px 48px -16px rgba(0,0,0,0.72);
+	-moz-box-shadow: 3px 1px 48px -16px rgba(0,0,0,0.72);
+	box-shadow: 3px 1px 48px -16px rgba(0,0,0,0.72);
+}
+
+.c_product >.p_img_container {
+    height: 180px;
+    /*background: rgba(248, 248, 248, 0.4);*/
+     padding: 10px;
+     position:relative;
+}
+.c_product >.p_img_container  .p_img{
+	/*max-height: 99%;
+    max-width: 99%;*/
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-height: 90%;
+    margin: auto;
+}
+
+.c_product > .p_desc{
+	max-height: 126px;
+    text-align: center;
+    overflow: overlay;
+}
+
+.c_product > .p_bottom_container{
+	/*bottom: 0;
+    position: absolute;*/
+    width: 100%;
+    padding: 16px;
+}
+.c_product  .bg-button {
+    display: block;
+}
+
+.p_image_detail{ min-height:280px; text-align: -webkit-center; }
+
+.img_show_container{
+	min-height:400px;
+	max-height:400px;
+	border: 1px dotted rgba(95, 104, 116, 0.12);
+}
+#img_show{
+	max-height:395px;
+	max-width:100%;
+}
+
+.img_thumb{
+	height: 80px;
+}
+
+.img_thumb2{max-height:60px;}
+
+
+#number_decrease,#number_increase{     
+	    display: inline-block;
+    height: 30px;
+    width: 38px;
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    vertical-align: middle;
+    background: #777;
+    color: white;
+    font-weight: bolder;
+    }
+
+.number_addtocart{ 
+        display: inline-block;
+    width: 40px;
+    font-size: 16px;
+    text-align: center;
+    height: 40px;
+    border: 0;
+    background: #f5f5f5;
+	
+	}
+
+
+select#ddnn {
+    max-height: 26px;
+    /* width: 114px; */
+    padding: 0px 5px 0px 2px;
+    background-color: #fff;
+    margin-right: 4px;
+    border: 1px solid rgb(204, 204, 204);
+    display: table-cell;
+    height: inherit;
+}
+
+
+#tab_product>li.active{
+	
+}
+#tab_product>li.active>a{
+	color: #FFFFFF !important;
+    background-color:#dc5c05 !important;
+}
+
+
+
+@media screen and (max-width : 768px){
+	
+.img_show_container {
+    min-height: 285px;
+}
+	
+}

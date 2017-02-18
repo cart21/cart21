@@ -1,0 +1,146 @@
+/*Strip the ul of padding and list styling*/
+
+ #main_menu  {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	min-width:100%;
+	background-color: #dc5c05;
+    display: inline-table;
+    vertical-align: bottom;
+}
+
+ #main_menu ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	position: absolute;
+}
+
+
+#main_menu ul ul {
+    top: 0;
+    left: 100%;
+    position: absolute;
+}
+
+/*Create a horizontal list with spacing*/
+#main_menu li {
+	display:inline-block;
+	float: left;
+	margin-right: 1px;
+	position: relative;
+}
+
+/*Style for menu links*/
+ #main_menu li a {
+	display:block;
+	min-width:114px;
+	height:35px;
+	text-align: center;
+	line-height:35px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+    
+    /*-webkit-font-smoothing: antialiased;*/
+}
+
+
+/*Hover state for top level links*/
+ #main_menu li:hover a {
+	background: #444;
+}
+.main_menu_active{
+	background:#444a52 !important;
+}
+
+/*Style for dropdown links*/
+ #main_menu li:hover ul a {
+	background: #f3f3f3;
+	color: #2f3036;
+	height: 35px;
+	line-height: 35px;
+}
+
+/*Hover state for dropdown links*/
+#main_menu li:hover ul a:hover {
+	
+	color: #dc5c05;
+}
+
+/*Hide dropdown links until they are needed*/
+ ul.subm {
+	display: none;
+	z-index:3;
+	min-width: 157px !important;
+	border-bottom: 2px solid #dc5c05;
+}
+ ul.subm li a{
+ 	text-align:left !important;
+ 	font-size: 14px !important;
+ }
+
+ 
+/*Make dropdown links vertical*/
+ #main_menu li ul li {
+	display: block;
+	float: none;
+}
+
+/*Prevent text wrapping*/
+li ul li a {
+	width: auto;
+	min-width: 100px;
+	padding: 0 10px;
+}
+
+/*Display the dropdown on hover*/
+ #main_menu li:hover > ul.subm{
+	display: block;
+}
+
+/*Style 'show menu' label button and hide it by default*/
+.show-menu {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	color: #fff;
+	background: #dc5c05;
+	text-align: center;
+	padding: 6px 0;
+	display: none;
+}
+
+/*Hide checkbox*/
+#menu_position input[type=checkbox], #menu_full_position input[type=checkbox]{
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+ #menu_position input[type=checkbox]:checked ~ #main_menu{
+    display: inline-table;
+}
+
+
+/*Responsive Styles*/
+
+@media screen and (max-width : 768px){
+	/*Make dropdown links appear inline*/
+	ul#main_menu {
+		position: absolute;
+		display: none;
+		z-index:21;
+	}
+	/*Create vertical spacing*/
+	 #main_menu li {
+		margin-bottom: 1px;
+	}
+	/*Make all menu links full width*/
+	#main_menu ul li, li a {
+		max-width: 100%;
+	}
+	/*Display 'show menu' link*/
+	.show-menu {
+		display:block;
+	}
+}
